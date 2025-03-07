@@ -53,7 +53,8 @@ public final class ParameterizedTypeName extends TypeName {
     }
   }
 
-  @Override public ParameterizedTypeName annotated(List<AnnotationSpec> annotations) {
+  @Override
+  public ParameterizedTypeName annotated(List<AnnotationSpec> annotations) {
     return new ParameterizedTypeName(
         enclosingType, rawType, typeArguments, concatAnnotations(annotations));
   }

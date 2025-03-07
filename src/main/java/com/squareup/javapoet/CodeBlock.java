@@ -66,7 +66,6 @@ public final class CodeBlock {
   private static final Pattern NAMED_ARGUMENT =
       Pattern.compile("\\$(?<argumentName>[\\w_]+):(?<typeChar>[\\w]).*");
   private static final Pattern LOWERCASE = Pattern.compile("[a-z]+[\\w_]*");
-
   /** A heterogeneous list containing string literals and value placeholders. */
   final List<String> formatParts;
   final List<Object> args;
